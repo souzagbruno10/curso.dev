@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg'); /* URL da bandeira da Palestina */
+    background-size: cover; /* Faz com que a imagem cubra todo o plano de fundo */
+    background-position: center; /* Centraliza a bandeira */
+    color: black; /* Garante que o texto seja legível */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para melhorar a leitura */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(1.05);
+}
+
+.ar {
+    background-color: #ff6b6b;
+}
+
+.pt {
+    background-color: #4caf50;
+}
+
+.en {
+    background-color: #2196f3;
+}
