@@ -1,137 +1,226 @@
 /* General Styles */
 .container {
-    font-family: 'Georgia', serif;
-    background-color: #fffaf7; /* Fundo creme */
-    color: #d86b84; /* Texto rosa claro */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .header {
-    background-color: #ffe6eb; /* Fundo rosa pálido */
-    color: #d86b84; /* Rosa claro */
-    padding: 20px;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    border-bottom: 2px solid #d86b84;
-  }
-  
+  font-family: 'Georgia', serif;
+  background-color: #fffaf7; /* Fundo creme */
+  color: #d86b84; /* Texto rosa claro */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #ffe6eb; /* Fundo rosa pálido */
+  color: #d86b84; /* Rosa claro */
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #d86b84;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #fff3f7; /* Fundo mais claro */
+}
+
+.heroText {
+  max-width: 500px;
+  text-align: left;
+}
+
+.heroText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d86b84;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #b9576a; /* Tom rosa um pouco mais escuro */
+}
+
+.ctaButton {
+  background-color: #f8a8b5; /* Botão rosa claro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: #f294a8; /* Rosa mais vibrante no hover */
+}
+
+/* Hero Image */
+.heroImage {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: url('giStudio.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid #d86b84;
+}
+
+.heroImage {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Descrição da imagem */
+.imageDescription {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  display: none; /* Inicialmente escondido */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Exibe a descrição quando a imagem é sobrevoada */
+.heroImage:hover .imageDescription {
+  display: block;
+  opacity: 1;
+}
+
+/* Services Section */
+.servicesSection {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fffaf7;
+}
+
+.servicesSection h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #d86b84;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.serviceCard {
+  background-color: #ffe6eb; /* Fundo dos cartões */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.serviceCard h3 {
+  color: #d86b84;
+  margin-bottom: 10px;
+}
+
+.serviceCard p {
+  color: #b9576a; /* Texto em tom de rosa suave */
+  line-height: 1.5;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ffe6eb;
+  color: #d86b84;
+}
+
+/* Responsividade para dispositivos móveis */
+
+@media (max-width: 768px) {
+  /* Ajusta a seção Hero para telas menores */
   .heroSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background-color: #fff3f7; /* Fundo mais claro */
+    flex-direction: column; /* Alinha os itens em coluna */
+    padding: 20px;
   }
-  
-  .heroText {
-    max-width: 500px;
-    text-align: left;
-  }
-  
+
   .heroText h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d86b84;
+    font-size: 2rem; /* Tamanho da fonte reduzido */
   }
-  
+
   .heroText p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    line-height: 1.8;
-    color: #b9576a; /* Tom rosa um pouco mais escuro */
+    font-size: 1rem; /* Reduz o tamanho da fonte do parágrafo */
   }
-  
+
   .ctaButton {
-    background-color: #f8a8b5; /* Botão rosa claro */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .ctaButton:hover {
-    background-color: #f294a8; /* Rosa mais vibrante no hover */
-  }
-  
-  .heroImage {
-    width: 300px;
-    height: 300px;
-    background-image: url('giStudio.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    border: 5px solid #d86b84;
+    font-size: 0.9rem; /* Tamanho do botão ajustado */
+    padding: 8px 16px;
   }
 
   .heroImage {
-    border-radius: 50%;
-    overflow: hidden;
+    width: 250px; /* Ajusta o tamanho da imagem */
+    height: 250px;
   }
-  
 
   .imageDescription {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 5px;
-    display: none; /* Inicialmente escondido */
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte na descrição */
   }
-  
-  /* Services Section */
+
   .servicesSection {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fffaf7;
+    padding: 20px 10px;
   }
-  
-  .servicesSection h2 {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #d86b84;
-  }
-  
+
   .servicesGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column; /* Coloca os cartões de serviço em coluna */
+    gap: 10px;
   }
-  
+
   .serviceCard {
-    background-color: #ffe6eb; /* Fundo dos cartões */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 100%; /* Faz os cartões ocuparem toda a largura */
   }
-  
+
+  /* Reduz tamanho da fonte nos cartões de serviço */
   .serviceCard h3 {
-    color: #d86b84;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
   }
-  
+
   .serviceCard p {
-    color: #b9576a; /* Texto em tom de rosa suave */
-    line-height: 1.5;
+    font-size: 1rem;
   }
-  
-  /* Footer Section */
-  .footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #ffe6eb;
-    color: #d86b84;
+}
+
+/* Responsividade para telas muito pequenas (exemplo: celulares em modo retrato) */
+@media (max-width: 480px) {
+  .header {
+    font-size: 2rem; /* Reduz o tamanho da fonte do header */
   }
-  
+
+  .heroText h2 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .ctaButton {
+    font-size: 0.8rem; /* Tamanho do botão ainda menor */
+    padding: 6px 12px;
+  }
+
+  .servicesSection h2 {
+    font-size: 1.5rem; /* Tamanho da fonte menor */
+  }
+
+  .serviceCard h3 {
+    font-size: 1rem; /* Fonte ainda menor */
+  }
+
+  .serviceCard p {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte do parágrafo */
+  }
+}
