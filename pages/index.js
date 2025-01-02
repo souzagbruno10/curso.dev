@@ -22,15 +22,17 @@ function Home() {
           <button className={styles.ctaButton}>Saiba Mais</button>
         </div>
         <div className={styles.heroImage}>
-          {/* Correção do caminho da imagem */}
-          <Image 
-            src="/giStudio.jpeg"  // Caminho correto para imagens na pasta public
-            alt="Imagem do Studio Sairaf"
-            width={300}
-            height={300}
-            className={styles.roundedImage} 
-            priority
-          />
+        <Image 
+      src="/giStudio.png"  // Caminho correto da imagem
+      alt="Imagem do Studio Sairaf, mostrando o ambiente interno"
+      width={350}
+      height={350}
+      className={styles.roundedImage} 
+      priority
+    />
+  </div>
+  <div className={styles.imageDescription}>
+    <span className={styles.arrow}>→</span> 
         </div>
       </section>
 
