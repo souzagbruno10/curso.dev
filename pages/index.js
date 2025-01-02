@@ -38,9 +38,9 @@ function Home() {
         <h2>Nossos Serviços</h2>
         <div className={styles.servicesGrid}>
           <div className={styles.serviceCard}>
-            <h3>Design de Sobrancelhas</h3>
+            <h3>Design de Sobrancelhas e Extensão de Cílios</h3>
             <p>
-              Transformamos suas sobrancelhas com técnicas precisas e
+              Transformamos suas sobrancelhas e cílios com técnicas precisas e
               personalizadas para realçar sua beleza.
             </p>
           </div>
