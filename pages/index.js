@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; // Importação do componente Image
+import Image from 'next/image'; // Importação do componente Imagem
 import styles from '../styles/Home.module.css';
 
 function Home() {
