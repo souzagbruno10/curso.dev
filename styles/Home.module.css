@@ -62,11 +62,31 @@
   .heroImage {
     width: 300px;
     height: 300px;
-    background-image: url('giStudio.jpeg');
+    background-image: url('giStudio.png');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     border: 5px solid #d86b84;
+  }
+
+  .heroImage {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+
+  .imageDescription {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Inicialmente escondido */
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
   
   /* Services Section */
