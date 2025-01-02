@@ -1,54 +1,117 @@
+/* General Styles */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg'); /* URL da bandeira da Palestina */
-    background-size: cover; /* Faz com que a imagem cubra todo o plano de fundo */
-    background-position: center; /* Centraliza a bandeira */
-    color: black; /* Garante que o texto seja legível */
+    font-family: 'Georgia', serif;
+    background-color: #fffaf7; /* Fundo creme */
+    color: #d86b84; /* Texto rosa claro */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: #ffe6eb; /* Fundo rosa pálido */
+    color: #d86b84; /* Rosa claro */
+    padding: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #d86b84;
+  }
+  
+  .heroSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff3f7; /* Fundo mais claro */
+  }
+  
+  .heroText {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .heroText h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para melhorar a leitura */
-}
-
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.button {
+    color: #d86b84;
+  }
+  
+  .heroText p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #b9576a; /* Tom rosa um pouco mais escuro */
+  }
+  
+  .ctaButton {
+    background-color: #f8a8b5; /* Botão rosa claro */
+    color: white;
+    border: none;
     padding: 10px 20px;
     font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    color: white;
-}
-
-.button:hover {
-    transform: scale(1.1);
-}
-
-.button:active {
-    transform: scale(1.05);
-}
-
-.ar {
-    background-color: #ff6b6b;
-}
-
-.pt {
-    background-color: #4caf50;
-}
-
-.en {
-    background-color: #2196f3;
-}
+  }
+  
+  .ctaButton:hover {
+    background-color: #f294a8; /* Rosa mais vibrante no hover */
+  }
+  
+  .heroImage {
+    width: 300px;
+    height: 300px;
+    background-image: url('giStudio.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 5px solid #d86b84;
+  }
+  
+  /* Services Section */
+  .servicesSection {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fffaf7;
+  }
+  
+  .servicesSection h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #d86b84;
+  }
+  
+  .servicesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .serviceCard {
+    background-color: #ffe6eb; /* Fundo dos cartões */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+  }
+  
+  .serviceCard h3 {
+    color: #d86b84;
+    margin-bottom: 10px;
+  }
+  
+  .serviceCard p {
+    color: #b9576a; /* Texto em tom de rosa suave */
+    line-height: 1.5;
+  }
+  
+  /* Footer Section */
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffe6eb;
+    color: #d86b84;
+  }
+  
