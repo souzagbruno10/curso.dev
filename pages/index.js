@@ -23,17 +23,14 @@ function Home() {
         </div>
         <div className={styles.heroImage}>
         <Image 
-      src="/giStudio.png"  // Caminho correto da imagem
-      alt="Imagem do Studio Sairaf, mostrando o ambiente interno"
-      width={350}
-      height={350}
+      src="/giStudio.png"  
+      alt=""// Caminho correto da imagem
+      width={300}
+      height={300}
       className={styles.roundedImage} 
-      priority
+     
     />
   </div>
-  <div className={styles.imageDescription}>
-    <span className={styles.arrow}>→</span> 
-        </div>
       </section>
 
       {/* Services Section */}
