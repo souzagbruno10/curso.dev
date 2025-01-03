@@ -25,11 +25,11 @@ export default function AgendamentoPage() {
           <img
 
           
-            src="/giStudio.png"
-           
-            width={300}
-            height={300}
-            className={styles.roundedImage}
+          src="/giStudio.png"
+          alt=""
+          width={300}
+          height={300}
+          className={styles.roundedImage}
 
             
           />
