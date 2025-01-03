@@ -170,7 +170,6 @@
     height: 250px;
   }
 
-
   .imageDescription {
     font-size: 0.9rem; /* Ajusta o tamanho da fonte na descrição */
   }
@@ -228,7 +227,6 @@
 
 /* Formulário de Agendamento */
 
-
 .agendamentoSection {
   padding: 40px 20px;
   background-color: #fff3f7;
@@ -239,7 +237,7 @@
   max-width: 600px;
   margin: 0 auto;
   background-color: #ffe6eb;
-  padding: 20px;
+  padding: 30px; /* Aumenta o padding dentro do formulário */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -258,17 +256,18 @@
 .agendamentoForm input,
 .agendamentoForm select {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Aumenta o padding para mais conforto */
   border: 1px solid #d86b84;
   border-radius: 8px;
   font-size: 1rem;
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
 }
 
 .agendamentoForm button {
   background-color: #f8a8b5; /* Botão rosa claro */
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px; /* Botão com mais espaço interno */
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -286,3 +285,40 @@
   color: #d86b84;
 }
 
+.contactSection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contactSection p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialIcons a {
+  transition: transform 0.2s ease-in-out;
+}
+
+.socialIcons a:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo para o ícone de casinha (Home) */
+.homeIcon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.homeIcon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
