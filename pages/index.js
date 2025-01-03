@@ -1,8 +1,15 @@
 import React from 'react';
 import Image from 'next/image'; // Importação do componente Imagem
+import { useRouter } from 'next/router'; // Importação do hook useRouter
 import styles from '../styles/Home.module.css';
 
 function Home() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/agendamento'); // Redireciona para a página de agendamento
+  };
+
   return (
     <div className={styles.container}>
       {/* Header Section */}
@@ -19,18 +26,17 @@ function Home() {
             sua expressão e confiança. Descubra um atendimento personalizado e
             uma experiência única.
           </p>
-          <button className={styles.ctaButton}>Saiba Mais</button>
+          <button className={styles.ctaButton} onClick={handleClick}>Saiba Mais</button>
         </div>
         <div className={styles.heroImage}>
-        <Image 
-      src="/giStudio.png"  
-      alt=""// Caminho correto da imagem
-      width={300}
-      height={300}
-      className={styles.roundedImage} 
-     
-    />
-  </div>
+          <Image 
+            src="/giStudio.png"  
+            alt="" // Caminho correto da imagem
+            width={300}
+            height={300}
+            className={styles.roundedImage} 
+          />
+        </div>
       </section>
 
       {/* Services Section */}
